@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
+
+.vollkorn-sc {
+    font-family: 'Vollkorn SC', serif;
+}
+.logo {
+    width: 125px;
+    height: 125px;
+}
+.navbar-brand-logo {
+    height: 50px;
+}
+.banner {
+    background:linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, 0)), url(/assets/img/CINEMA_PARADISO_DAY2-58-1-1150x700.jpeg) center center fixed no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.nav-item a {
+    transition: 0.5s;
+}
+
+.nav-item a:active {
+    background-color: grey;
+}
+.film-card {
+    z-index: -1;
+}
