@@ -55,4 +55,7 @@
       height: 400px;
       background-size: cover;
     }
+    .navbar-nav li.nav-item a.active {
+        background-color: transparent;
+    }
  }
