@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-0 position-fixed w-100 w-100">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-0 position-fixed w-100">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link active py-3" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link  py-3" aria-current="page" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link py-3" href="qui-somme-nous.html">Qui somme-nous ?</a>
+                <a class="nav-link  py-3" href="qui-somme-nous.html">Qui somme-nous ?</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle py-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle py-3" href="54#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Les Films
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -36,80 +36,100 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link py-3" href="contact.html">Contact</a>
+                <a class="nav-link active py-3" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <section class="banner banner-height .d-flex justify-content-center align-item-center pt-5">
-    </section>
-    <section class="actualite">
-      <div class="container my-3">
-        <h2 class="text-center">
-          Le Festival de film de plein air - Parc MONCEAU
-        </h2>
-        <p class="text-center">
-          Il se tiendra du 5 au 8 août 2022. L'entrée est gratuite mais la pré-réservation est conseillée.
-          Les derniers films programmés :
-        </p>
-        <div class="container-fluid">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
-            <div class="col mt-sm-5 mt-md-0 d-flex justify-content-center film-card">
-              <div class="card" style="width: 22rem;">
-                <img src="/assets/img/film-card/ames.jpeg" class="card-img-top" alt="...">
-                <div class="card-body pb-0">
-                  <h5 class="card-title">5 août 2022 21:00 </h5>
-                  <p class="card-text">Un film de Andrew Niccol.</p>
-                  <br>
-                  <p>
-                    A Séoul, au bord du fleuve Han, les Park tiennent un petit snack qui permet à Hie-bong <a href="#">LIRE PLUS</a>
-                  </p>
+    <section class="p-5 mp-2">
+        <div class="container p-5">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Nous contacter</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">N'hésitez pas à nous laisser un message.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-3">
+                                <input type="text" id="name" name="name" class="form-control"  placeholder="Nom">
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-3">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Mail">
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-3">
+                                <input type="text" id="subject" name="subject" class="form-control"  placeholder="Sujet">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form mb-3" >
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Taper votre texte ici..."></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer </a>
                 </div>
-              </div>
+                <div class="status"></div>
             </div>
-            <div class="col mt-sm-5 mt-md-0 d-flex justify-content-center film-card">
-              <div class="card" style="width: 22rem;">
-                <img src="/assets/img/film-card/chez_john.jpeg" class="card-img-top" alt="...">
-                <div class="card-body pb-0">
-                  <h5 class="card-title">6 août 2022 21:00</h5>
-                  <p class="card-text">Un film de Bong Joon-ho.</p>
-                  <br>
-                  <p>
-                    Savannah, une étudiante idéaliste, et John, un soldat des Forces spéciales américaines en permission, tombent pourtant éperdument amoureux <a href="#">LIRE PLUS</a>
-                  </p>
-                </div>
-              </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>5, rue de Test 75001 Paris</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+33 6 58 85 58 85</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>prénom.nom@festivalfilmpleinair.org</p>
+                    </li>
+                </ul>
             </div>
-            <div class="col mt-5 mt-xl-0 d-flex justify-content-center film-card">
-              <div class="card" style="width:  22rem;">
-                <img src="/assets/img/film-card/mother.jpeg" class="card-img-top" alt="...">
-                <div class="card-body pb-0">
-                  <h5 class="card-title">7 août 2022 21:00</h5>
-                  <p class="card-text">Un film de Lasse Hallström.</p>
-                  <br>
-                  <p>
-                    Une veuve élève son fils unique Do-joon qui est sa seule raison d'être. À 28 ans, il est loin d'être indépendant . <a href="#">LIRE PLUS</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col mt-5 mt-xl-0 d-flex justify-content-center film-card">
-              <div class="card" style="width:  22rem;">
-                <img src="/assets/img/film-card/mal_pierre.jpeg" style="overflow: hidden;" class="card-img-top" alt="...">
-                <div class="card-body pb-0">
-                  <h5 class="card-title">8 août 2022 21:00</h5>
-                  <p class="card-text">Un film de Denis Villeneuve.</p>
-                  <br>
-                  <p>
-                    Gabrielle a grandi dans la petite bourgeoisie agricole où son rêve d’une passion absolue fait scandale. A une époque où l’on destine d’abord les femmes au mariage, <a href="#">LIRE PLUS</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!--Grid column-->
         </div>
-      </div>
+        </div>
     </section>
     <section class="contact bg-dark text-light p-5">
       <div class="container">
