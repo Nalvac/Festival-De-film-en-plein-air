@@ -49,6 +49,11 @@
 .film-card {
     z-index: -1;
 }
+.fa-2x {
+    font-size: 20px !important;
+}
+.list-films {
+}
 @media (max-width: 976px) { 
     .banner-height {
       background:linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0)), url(/assets/img/2-5-1024x576.png) center center  no-repeat;

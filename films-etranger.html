@@ -42,93 +42,38 @@
           </div>
         </div>
     </nav>
-    <section class="p-5 mp-2">
-        <div class="container p-5">
-
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-5">Nous contacter</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">N'hésitez pas à nous laisser un message.</p>
-
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-3">
-                                <input type="text" id="name" name="name" class="form-control"  placeholder="Nom">
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-3">
-                                <input type="text" id="email" name="email" class="form-control" placeholder="Mail">
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-3">
-                                <input type="text" id="subject" name="subject" class="form-control"  placeholder="Sujet">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form mb-3" >
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Taper votre texte ici..."></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </form>
-
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer </a>
-                </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>5, rue de Test 75001 Paris</p>
-                    </li>
-
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+33 6 58 85 58 85</p>
-                    </li>
-
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>prénom.nom@festivalfilmpleinair.org</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-        </div>
+    <section class="">
+        <div class="container list-films">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </section>
     <section class="contact bg-dark text-light p-5">
