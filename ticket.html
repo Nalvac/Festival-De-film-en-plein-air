@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-0 position-fixed w-100">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-0 position-fixed w-100" style="z-index: 455;">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                 <a class="nav-link  py-3" href="qui-somme-nous.html">Qui somme-nous ?</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle py-3" href="films.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle py-3 active"  href="films.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Les Films
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -36,101 +36,95 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active py-3" href="contact.html">Contact</a>
+                <a class="nav-link  py-3" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <section class="p-5 mp-2">
-        <div class="container p-5">
-
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-5">Nous contacter</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">N'hésitez pas à nous laisser un message.</p>
+    <div class="py-5">
+      <div class="container form">
 
         <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-3">
-                                <input type="text" id="name" name="name" class="form-control"  placeholder="Nom">
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-3">
-                                <input type="text" id="email" name="email" class="form-control" placeholder="Mail">
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-3">
-                                <input type="text" id="subject" name="subject" class="form-control"  placeholder="Sujet">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form mb-3" >
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Taper votre texte ici..."></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </form>
-
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer </a>
+          
+          <!-- pré-reservation -->
+          <article class="col-sm-12 maincontent">
+            <header class="page-header">
+              <h1 class="page-title">Effectuer une pré-réservation</h1>
+            </header>
+            <p><b>Les places sont gratuites et le placement libre.</b><br>Pour vous recevoir dans les meilleures conditions, nous vous invitons à effectuer une <b><u>pré-réservation</u></b> grâce au formulaire ci-dessous.
+            </p><br>
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-control" type="text" placeholder="Nom &amp; prénom">
+                  </div>
                 </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>5, rue de Test 75001 Paris</p>
-                    </li>
-
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+33 6 58 85 58 85</p>
-                    </li>
-
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>prénom.nom@festivalfilmpleinair.org</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-control" type="text" placeholder="Adresse email *"><i>champs obligatoire</i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-control" type="text" placeholder="Téléphone">
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <p><br><br><b>Le 5 août 2022 21:00</b></p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/ames.jpeg" width="30%" height="30%">Les âmes vagabondes</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/elena.jpeg" width="30%" height="30%">ELENA</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/cite_rose.jpeg" width="30%" height="30%">La cité rose</label>
+                  </div>
+                  </div>
+                </form></article></div>
+                <div class="row">
+                  <div>
+                    <p><b>Le 6 août 2022 21:00</b></p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/chez_john.jpeg" width="30%" height="30%">Chez John</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/incendies.jpeg" width="30%" height="30%">Incendies</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/ecole_vie.jpeg" width="30%" height="30%">L'école de la vie</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <p><b>Le 7 août 2022 21:00</b></p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/mother.jpeg" width="30%" height="30%">Mother</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/mal_pierre.jpeg" width="30%" height="30%">Mal de pierres</label>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <label class="checkbox"><input type="checkbox"><img src="./assets/img/film-card/maitre_enfant.jpeg" width="30%" height="30%">Le maître est l'enfant</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <button type="button" class="btn btn-secondary">Effectuer la pré-reservation</button>
+                  </div>
+                </div>
+              
+    
+          
+          <!-- /pré-reservation -->
+    
         </div>
-        </div>
-    </section>
+    </div>
     <section class="contact bg-dark text-light p-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
