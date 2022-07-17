@@ -114,4 +114,16 @@ input[type="checkbox"] {
     .navbar-nav li.nav-item a.active {
         background-color: transparent;
     }
+    td {
+        display: block;
+    
+    }
+    tbody {
+       background-color:  #212529;
+    }
+ }
+ @media (max-width: 767px) { 
+    .column-reserves {
+        flex-direction: column-reverse;
+    }
  }
