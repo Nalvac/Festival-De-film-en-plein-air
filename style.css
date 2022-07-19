@@ -11,7 +11,7 @@
     height: 50px;
 }
 .banner {
-    background:linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0)), url(/assets/img/2-5-1024x576.png) center center fixed no-repeat;
+    background:linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0)), url(./assets/img/2-5-1024x576.png) center center fixed no-repeat;
     background-size: cover;
     height: 800px;
 }
